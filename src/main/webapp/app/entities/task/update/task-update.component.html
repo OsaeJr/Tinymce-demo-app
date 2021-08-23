@@ -18,11 +18,7 @@
 
         <div class="form-group">
           <label class="form-control-label" for="field_description">Description</label>
-          <jhi-editor-widget
-            [theme]="'modern'"
-            [content]="task.description"
-            (onDataChanged)="setContentChanged($event)"
-          ></jhi-editor-widget>
+          <jhi-editor-widget [theme]="'modern'" [content]="task.description" (DataChanged)="setContentChanged($event)"></jhi-editor-widget>
           />
         </div>
 
